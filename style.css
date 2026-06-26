@@ -28,6 +28,7 @@ button{
     margin: 5px;
     padding: 5px;
     text-align: center;
+    box-shadow: #000000 1px 3px 5px -1px;
     background-color: #835a5a;
 }
 #resultado{
