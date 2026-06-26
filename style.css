@@ -14,19 +14,20 @@ body{
 }
 input{
     margin: 5px;
-    height: 25px;
+    height: 30px;
     border-radius: 8px;
     text-align: center;
     border: none;
 }
 button{
-    width: 120px;
+    width: 140px;
+    height: 30px;
     border: none;
     border-radius: 8px;
     margin: 5px;
     padding: 5px;
     text-align: center;
-    background-color: #50776e;
+    background-color: #835a5a;
 }
 #resultado{
     text-align: center;
