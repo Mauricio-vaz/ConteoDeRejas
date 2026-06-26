@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: #265e50;
+}
+.contendor{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    margin: 5px;
+    height: 25px;
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+}
+button{
+    width: 120px;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: #50776e;
+}
+#resultado{
+    text-align: center;
+    justify-content: center;
+    margin: 50px;
+}

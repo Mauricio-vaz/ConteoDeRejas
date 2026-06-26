@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conteo de rejas</title>
+</head>
+<body>
+    <div class="contenedor">
+        <input type="tel" placeholder="Nissan" id="nisan">
+        <input type="tel" placeholder="Hormiga" id="hormiga"> 
+        <input type="tel" placeholder="Rabón" id="rabon">
+        <input type="tel" placeholder="Tortón" id="torton">
+        <input type="tel" placeholder="Plana Roja" id="pr">
+        <input type="tel" placeholder="Plana Negra" id="pn">
+        <input type="tel" placeholder="Otro" id="otro">
+        <button onclick="calcular()">Calcular</button>
+        <p id="terminado">RESULTADO:</p>
+    </div>
+</body>
+<script>
+    let nissan = 48;
+    let hormiga = 160;
+    let rabon = 252;
+    let torton = 320;
+    let pr = 400;
+    let pn = 480;
+
+    function calcular(){
+        const nisa = Number(document.getElementById("nisan").value);
+        const horm = Number(document.getElementById("hormiga").value);
+        const rabo = Number(document.getElementById("rabon").value);
+        const tort = Number(document.getElementById("torton").value);
+        const pRoja = Number(document.getElementById("pr").value);
+        const pNegra = Number(document.getElementById("pn").value);
+        const otr = Number(document.getElementById("otro").value);
+
+
+        const p = document.getElementById("terminado");
+
+        sN = nisa * nissan;
+        sH = horm * hormiga;
+        sR = rabo * rabon;
+        sT = tort * torton;
+        spn = pNegra * pn;
+        spr = pRoja * pr;
+        //otro = otr;
+        total = sN+sH+sR+sT+spn+spr+otr; 
+
+        p.innerHTML = `RESULTADO:<br><br> NISSAN: ${sN}<br> HORMIGA: ${sH}<br> RABÓN: ${sR}<br> TORTÓN: ${sT}<br>
+        PLANA NEGRA: ${spn}<br> PLANA ROJA: ${spr}<br>TOTAL DE REJAS LAVADAS EN TURNO: ${total}`;
+        
+        if(total == 0){
+            total == null;//si el resultado es 0 que no imprima ni un simbolo
+        }
+    }
+
+</script>
+</html>
