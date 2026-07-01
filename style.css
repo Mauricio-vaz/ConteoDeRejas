@@ -6,30 +6,46 @@ body{
     background-color: #265e50;
     text-align: center;
 }
-.contendor{
-    position: absolute;
+.contenedor{
+    width: auto;
+    height: 120px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+    transform: translateX(-4%);
 }
+
 input{
     margin: 5px;
     height: 30px;
-    border-radius: 8px;
-    text-align: center;    
-    box-shadow: #000000 1px 3px 5px -1px;
     border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.4);
+    transition: all 300ms ease-in-out;
+}
+input:focus{
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+                -13px -13px 100px #ffffff;
 }
 button{
     width: 140px;
     height: 30px;
     border: none;
-    border-radius: 8px;
+    border-radius: 35px;
     margin: 5px;
     padding: 5px;
     text-align: center;
-    box-shadow: #000000 1px 3px 5px -1px;
-    background-color: #835a5a;
+    background: linear-gradient(145deg, #facece, #f79f9f, #f87474, #f04949);
+    box-shadow:  26px 26px 51px #242222,
+                -26px -26px 51px #c48b8b;
 }
 #resultado{
     text-align: center;
