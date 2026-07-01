@@ -43,6 +43,8 @@ button{
     margin: 5px;
     padding: 5px;
     text-align: center;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
     background: linear-gradient(145deg, #facece, #f79f9f, #f87474, #f04949);
     box-shadow:  26px 26px 51px #242222,
                 -26px -26px 51px #c48b8b;
