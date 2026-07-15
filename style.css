@@ -17,6 +17,9 @@ body{
     padding: 15px;
     transform: translateX(-4%);
 }
+label{
+    left: 100%;
+}
 
 .contenedor input{
     rigth: 100%;
