@@ -18,6 +18,9 @@ body{
     transform: translateX(-4%);
 }
 
+.contenedor input{
+    rigth: 100%;
+}
 input{
     margin: 5px;
     height: 30px;
