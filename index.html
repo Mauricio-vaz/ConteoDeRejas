@@ -32,6 +32,14 @@
             <label for="pn">Plana Negra:</label>
             <input type="number" id="pn">
         </div>
+        <div class="titulo">   
+            <label for="i68">Isuzu 68:</label>
+            <input type="number" id="i68">
+        </div>
+        <div class="titulo">
+            <label for="i13">Isuzu 13:</label>
+            <input type="number" id="i13">
+        </div>
         <div class="titulo">
             <label for="otro">Otro:</label>
             <input type="number" id="otro">
@@ -47,6 +55,8 @@
     let torton = 320;
     let pr = 400;
     let pn = 480;
+    let i68 = 63;
+    let i13 = 0;
 
     function calcular(){
         const nisa = Number(document.getElementById("nisan").value);
@@ -56,6 +66,8 @@
         const pRoja = Number(document.getElementById("pr").value);
         const pNegra = Number(document.getElementById("pn").value);
         const otr = Number(document.getElementById("otro").value);
+        const isu68 = Number(document.getElementById("i68").value);
+        const isu13 = Number(document.getElementById("i13").value);
 
 
         const p = document.getElementById("terminado");
@@ -66,14 +78,17 @@
         sT = tort * torton;
         spn = pNegra * pn;
         spr = pRoja * pr;
+        si68 = isu68 * i68;
+        si13 = isu13 * i13;
         //otro = otr;
-        total = sN+sH+sR+sT+spn+spr+otr; 
+        total = sN+sH+sR+sT+spn+spr+otr+isu68+isu13; 
 
         p.innerHTML = `RESULTADO:<br><br> NISSAN: ${sN}<br> HORMIGA: ${sH}<br> RABÓN: ${sR}<br> TORTÓN: ${sT}<br>
-        PLANA NEGRA: ${spn}<br> PLANA ROJA: ${spr}<br>TOTAL DE REJAS LAVADAS EN TURNO: ${total}`;
+        PLANA NEGRA: ${spn}<br> PLANA ROJA: ${spr}<br> ISUZU 68: ${si68}<br> ISUZU 13: ${si13}<br> TOTAL DE REJAS LAVADAS EN TURNO: ${total}`;
         
         if(total == 0){
             total == null;//si el resultado es 0 que no imprima ni un simbolo
+            p.innerHTML = "";
         }
     }
 
