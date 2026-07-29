@@ -56,7 +56,7 @@
     let pr = 400;
     let pn = 480;
     let i68 = 63;
-    let i13 = 0;
+    let i13 = 98;
 
     function calcular(){
         const nisa = Number(document.getElementById("nisan").value);
@@ -84,7 +84,7 @@
         total = sN+sH+sR+sT+spn+spr+otr+isu68+isu13; 
 
         p.innerHTML = `RESULTADO:<br><br> NISSAN: ${sN}<br> HORMIGA: ${sH}<br> RABÓN: ${sR}<br> TORTÓN: ${sT}<br>
-        PLANA NEGRA: ${spn}<br> PLANA ROJA: ${spr}<br> ISUZU 68: ${si68}<br> ISUZU 13: ${si13}<br> TOTAL DE REJAS LAVADAS EN TURNO: ${total}`;
+        PLANA NEGRA: ${spn}<br> PLANA ROJA: ${spr}<br> ISUZU 68: ${si68}<br> ISUZU 13: ${si13} <br> Otro: ${otr}<br> TOTAL DE REJAS LAVADAS EN TURNO: ${total}`;
         
         if(total == 0){
             total == null;//si el resultado es 0 que no imprima ni un simbolo
